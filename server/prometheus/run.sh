@@ -1,6 +1,6 @@
 #!/bin/bash
 
-prometheus_home=/home/franciscogalarza/tools/prometheus
+prometheus_home=/home/franciscogalarza/toolbox/prometheus
 
 sudo mkdir -p $prometheus_home
 cp prometheus.yml $prometheus_home
