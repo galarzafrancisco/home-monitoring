@@ -5,7 +5,7 @@ curl -SL https://github.com/prometheus/node_exporter/releases/download/v1.0.0-rc
 sudo tar -xvf node_exporter.tar.gz -C /usr/local/bin/ --strip-components=1
 
 # Copy service
-sudo cat node_exporter.service > /etc/systemd/system/node_exporter.service
+sudo cp node_exporter.service /etc/systemd/system/node_exporter.service
 
 # Start service
 sudo systemctl daemon-reload \
