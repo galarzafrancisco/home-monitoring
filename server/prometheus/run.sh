@@ -1,9 +1,14 @@
 #!/bin/bash
 
-docker run \
+prometheus_home=/home/franciscogalarza/projects/prometheus
+
+sudo mkdir -p $prometheus_home
+cp prometheus.yml $prometheus_home
+
+sudo docker run \
     -d \
     --name prometheus \
     --restart always \
     -p 9090:9090 \
-    -v /home/franciscogalarza/projects/prometheus:/etc/prometheus \
+    -v $prometheus_home:/etc/prometheus \
     prom/prometheus
