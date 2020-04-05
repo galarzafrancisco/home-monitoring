@@ -1,0 +1,9 @@
+[Unit]
+Description=Grafana
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/home/franciscogalarza/tools/grafana/start.sh
+
+[Install]
+WantedBy=multi-user.target
