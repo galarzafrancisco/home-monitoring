@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=node_exporter-1.0.0-rc.0.linux-armv7
+version=node_exporter-1.0.0-rc.0.linux-armv6
 
 # Install
 curl -SL https://github.com/prometheus/node_exporter/releases/download/v1.0.0-rc.0/$version.tar.gz > node_exporter.tar.gz && \
