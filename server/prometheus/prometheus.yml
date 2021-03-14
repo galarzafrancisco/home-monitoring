@@ -5,6 +5,11 @@ global:
   external_labels:
     network: 'home'
 scrape_configs:
+  # Raspberry Pi 3 router
+  - job_name: 'router'
+    static_configs:
+      - targets: 
+        - '172.24.1.1:9100'
   # Raspberry Pi 3
   - job_name: 'RP3'
     static_configs:
