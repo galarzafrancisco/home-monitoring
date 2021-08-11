@@ -11,4 +11,4 @@ sudo docker run \
     --restart always \
     -p 9090:9090 \
     -v $prometheus_home:/etc/prometheus \
-    prom/prometheus
+    prom/prometheus-linux-armv7
