@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Definitions
-grafana_home=/home/franciscogalarza/toolbox/grafana
+grafana_home=/home/$(whoami)/toolbox/grafana
 version=grafana-6.7.2.linux-armv7
 
 # Download binary
