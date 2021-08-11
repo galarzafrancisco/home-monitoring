@@ -3,7 +3,7 @@ Description=Grafana
 
 [Service]
 TimeoutStartSec=0
-ExecStart=/home/franciscogalarza/toolbox/grafana/start.sh
+ExecStart=/home/monitoring/toolbox/grafana/start.sh
 
 [Install]
 WantedBy=multi-user.target
