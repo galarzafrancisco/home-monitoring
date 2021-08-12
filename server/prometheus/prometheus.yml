@@ -10,7 +10,7 @@ scrape_configs:
       - targets:
         - '10.0.2.3:9113'    # load balancer (pi 4)
         - '10.0.2.4:9113'    # load balancer (pi 4)
-  - job_name: 'Address Aistralia'
+  - job_name: 'Address Australia'
     static_configs:
       - targets:
         - '10.0.1.7:9001'    # MBP-15-2015
