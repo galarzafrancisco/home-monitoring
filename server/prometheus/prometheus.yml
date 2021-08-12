@@ -1,6 +1,6 @@
 global:
   scrape_interval: 1m
-  scrape_timeout: 20s
+  scrape_timeout: 30s
   evaluation_interval: 1m
   external_labels:
     network: 'home'
@@ -10,6 +10,11 @@ scrape_configs:
       - targets:
         - '10.0.2.3:9113'    # load balancer (pi 4)
         - '10.0.2.4:9113'    # load balancer (pi 4)
+  - job_name: 'Address Aistralia'
+    static_configs:
+      - targets:
+        - '10.0.1.7:9001'    # MBP-15-2015
+        - '10.0.1.8:9001'    # MBP-15-2015
   - job_name: 'nodes'
     static_configs:
       - targets:
